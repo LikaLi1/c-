@@ -19,6 +19,7 @@ namespace ConsoleApp5
             {
                 fact *= i;
             }
+            Console.WriteLine(fact);
         }
     }
 }
