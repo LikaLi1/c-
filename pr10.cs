@@ -23,7 +23,7 @@ namespace ConsoleApp5
                 sum += fact;
 
             }
-            Console.WriteLine(fact);
+            Console.WriteLine(sum);
         }
     }
 }
