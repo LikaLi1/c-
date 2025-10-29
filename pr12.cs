@@ -20,7 +20,7 @@ namespace ConsoleApp8
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("Триугольник");
+            Console.WriteLine("Треугольник");
 
             for (int i = 1; i < 7; i++)
             {
