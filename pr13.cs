@@ -43,6 +43,23 @@ namespace ConsoleApp8
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("В ряд с пробелом по другой диагонали");
+            for (int i = 1; i < 7; i++)
+            {
+            Console.WriteLine();
+            for (int j = 1; j < 7; j++)
+            {
+                if (i + j == 7)
+                {
+                    Console.Write(" * ");
+                }
+                else
+                {
+                    Console.Write("   ");
+                }
+            }
+            Console.WriteLine();
+            }
         }
      }
 }
