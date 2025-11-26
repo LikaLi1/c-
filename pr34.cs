@@ -10,7 +10,7 @@ namespace ConsoleApp4
     internal class Program
     {
 
-        static long MaxA(int A, int B)
+        static int MaxA(int A, int B)
         {
             if(A > B)
             {
