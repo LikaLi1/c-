@@ -28,7 +28,7 @@ namespace ConsoleApp5
         {
             static void Main(string[] args)
             {
-
+                Employees p = new Employees("Никита", "UX/UI", 40000);
             }
         }
     }
