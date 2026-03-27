@@ -16,7 +16,7 @@ namespace Proga
     }
     abstract class Bird : Animal, IAction
     {
-        public override void Fly() => Console.WriteLine("fly");
+        public override void Fly() => Console.WriteLine("летит");
     }
     internal class Prog
     {
