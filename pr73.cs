@@ -2,7 +2,11 @@ using System;
 
 namespace Proga
 {
-    interface IAction
+    interface Test
+    {
+        void TestMethod() { }
+    }
+    interface IAction : Test
     {
         void Fly();
     }
