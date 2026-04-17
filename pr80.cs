@@ -24,9 +24,16 @@ class Proga
         var wood = new Resourse("Дерево", 3);
 
         var sim = gold_1 + gold_2;
-        Console.WriteLine($"Общее золото: {sim.Quantity}");
 
         var PriceInfo = GetPrice("Золото");
+        var final = new
+        {
+            ResourseName = sim.Name,
+            TotalValue = sim.Quantity * PriceInfo.GoldPrice,
+            Status = PriceInfo.IsRare ? "Легендарный" : "Обычный"
+        };
+        Console.WriteLine($"Общее золото: {sim.Quantity}");
+
         Console.WriteLine($"Цена за единицу: {PriceInfo.GoldPrice}, редкий: {PriceInfo.IsRare}");
     }
 
