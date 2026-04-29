@@ -13,8 +13,10 @@ Dictionary<string, string> d = new Dictionary<string, string>() //ёмкость
     ["id_6"] = "user_3"
 };
 
-users.TryAdd("id_1", "hello");
-Console.WriteLine(users.TryGetValue(users["id_7"], out string? text));
+users.Add("id_8", "hi");
+//users.TryAdd("id_1", "hello"); //попытка создания существующего объекта
+//Console.WriteLine(users.TryGetValue(users["id_7"], out string? text)); //проверка на существование
+users.Remove("id_3");
 
 KeyValuePair<string, string> a = new KeyValuePair<string, string>("id_1", "user_1"); //плучаем значение
 
@@ -36,4 +38,10 @@ Console.WriteLine();
 foreach (var (key, val) in users)
 {
     Console.WriteLine($"{key} - {val} ");
+}
+
+Console.WriteLine();
+foreach (var val in users.Values)
+{
+    Console.WriteLine(val);
 }
