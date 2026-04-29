@@ -14,7 +14,7 @@ Dictionary<string, string> d = new Dictionary<string, string>() //ёмкость
 };
 
 users.Add("id_8", "hi");
-//users.TryAdd("id_1", "hello"); //попытка создания существующего объекта
+users.TryAdd("id_1", "hello"); //попытка создания существующего объекта
 //Console.WriteLine(users.TryGetValue(users["id_7"], out string? text)); //проверка на существование
 users.Remove("id_3");
 
