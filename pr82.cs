@@ -40,3 +40,30 @@ var currentNode = d.Find(2);
 d.AddAfter(currentNode, 123);
 
 Queue<int> e = new Queue<int> ();
+
+
+List<string> sites = new List<string>()
+{
+    "google.com",
+    "microsoft.com",
+    "github.com"
+};
+LinkedList<string> list = new LinkedList<string> (sites);
+
+//list.AddLast("google.com");
+//list.AddLast("microsoft.com");
+//list.AddLast("github.com");
+
+var currentList = list.Find("microsoft.com");
+
+if (currentList != null)
+list.AddAfter(currentList, "stackoverflow.com");
+
+list.AddFirst("yandex.ru");
+
+var lists = list.Last;
+while (lists != null)
+{
+    Console.WriteLine (lists.Value);
+    lists = lists.Previous;
+}
