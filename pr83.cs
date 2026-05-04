@@ -59,3 +59,8 @@ List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 List<int> c = list[b];
 
 Console.WriteLine(list[a]);
+
+foreach (int i in list[a..7])
+{
+    Console.WriteLine(i);
+}
