@@ -21,7 +21,7 @@ namespace ConsoleApp17
     }
     class Program
     {
-        static void main()
+        static void Main()
         {
             ObservableCollection<Student> students = new ObservableCollection<Student>()
             {
