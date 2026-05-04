@@ -44,7 +44,18 @@ namespace ConsoleApp17
                         Console.WriteLine(student);
                     }
                 }
-            }
+            } 
         }
     }
 }
+
+
+Index a = ^1;
+Range b = 3..^0; // с 3 до последнего
+
+Console.WriteLine(b);
+
+List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+List<int> c = list[b];
+
+Console.WriteLine(list[a]);
