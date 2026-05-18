@@ -78,7 +78,7 @@ namespace ConsoleApp9
             {
                 writer.WriteLine(text2);
             }
-            using (StreamWriter reader = file.OpenText())
+            using (StreamReader reader = file.OpenText())
             {
                 string? line;
                 while((line = reader.ReadLine()) != null)
